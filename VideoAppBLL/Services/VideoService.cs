@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using VideoAppDAL;
 using VideoAppEntity;
 
 namespace VideoAppBLL.Services
@@ -9,27 +11,45 @@ namespace VideoAppBLL.Services
     {
         public Video Create(Video vid)
         {
-            throw new NotImplementedException();
+            Video newVideo;
+            FakeDB.Vidoes.Add(newVideo = new Video()
+            {
+                Id = FakeDB.Id++,
+                Name = vid.Name,
+                Genre = vid.Genre,
+                Year = vid.Year
+            });
+            return newVideo;
         }
 
         public Video Delete(int Id)
         {
-            throw new NotImplementedException();
+            var vid = Get(Id);
+            FakeDB.Vidoes.Remove(vid);
+            return vid;
         }
 
         public Video Get(int Id)
         {
-            throw new NotImplementedException();
+            return FakeDB.Vidoes.FirstOrDefault(x => x.Id == Id);
         }
 
         public List<Video> GetAll()
         {
-            throw new NotImplementedException();
+            return new List<Video>(FakeDB.Vidoes);
         }
 
         public Video Update(Video vid)
         {
-            throw new NotImplementedException();
+            var videoFromDb = Get(vid.Id);
+            if (videoFromDb == null)
+            {
+                throw new InvalidOperationException("Video not found");
+            }
+            videoFromDb.Name = vid.Name;
+            videoFromDb.Genre = vid.Genre;
+            videoFromDb.Year = vid.Year;
+            return videoFromDb;
         }
     }
 }
