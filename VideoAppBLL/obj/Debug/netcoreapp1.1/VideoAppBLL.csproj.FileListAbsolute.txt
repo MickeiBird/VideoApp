@@ -1,0 +1,3 @@
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppBLL\bin\Debug\netcoreapp1.1\VideoAppBLL.deps.json
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppBLL\obj\Debug\netcoreapp1.1\VideoAppBLL.csprojResolveAssemblyReference.cache
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppBLL\obj\Debug\netcoreapp1.1\VideoAppBLL.AssemblyInfo.cs

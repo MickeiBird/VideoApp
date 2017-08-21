@@ -1,0 +1,5 @@
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppUI.deps.json
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppUI.runtimeconfig.json
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppUI.runtimeconfig.dev.json
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\obj\Debug\netcoreapp1.1\VideoAppUI.AssemblyInfo.cs
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\obj\Debug\netcoreapp1.1\VideoAppUI.csprojResolveAssemblyReference.cache

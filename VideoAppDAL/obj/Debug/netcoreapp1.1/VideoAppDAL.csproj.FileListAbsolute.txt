@@ -1,0 +1,9 @@
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppDAL\bin\Debug\netcoreapp1.1\VideoAppDAL.deps.json
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppDAL\bin\Debug\netcoreapp1.1\VideoAppDAL.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppDAL\bin\Debug\netcoreapp1.1\VideoAppDAL.pdb
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppDAL\bin\Debug\netcoreapp1.1\VideoAppEntity.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppDAL\bin\Debug\netcoreapp1.1\VideoAppEntity.pdb
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppDAL\obj\Debug\netcoreapp1.1\VideoAppDAL.csprojResolveAssemblyReference.cache
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppDAL\obj\Debug\netcoreapp1.1\VideoAppDAL.AssemblyInfo.cs
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppDAL\obj\Debug\netcoreapp1.1\VideoAppDAL.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppDAL\obj\Debug\netcoreapp1.1\VideoAppDAL.pdb

@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.1": {
+      "videoappui/1.0.0": {
+        "dependencies": {
+          "VideoAppBLL": "1.0.0",
+          "VideoAppEntity": "1.0.0"
+        },
+        "runtime": {
+          "VideoAppUI.dll": {}
+        }
+      },
+      "videoappbll/1.0.0": {
+        "dependencies": {
+          "VideoAppDAL": "1.0.0",
+          "VideoAppEntity": "1.0.0"
+        },
+        "runtime": {
+          "VideoAppBLL.dll": {}
+        }
+      },
+      "videoappdal/1.0.0": {
+        "dependencies": {
+          "VideoAppEntity": "1.0.0"
+        },
+        "runtime": {
+          "VideoAppDAL.dll": {}
+        }
+      },
+      "videoappentity/1.0.0": {
+        "runtime": {
+          "VideoAppEntity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "videoappui/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "videoappbll/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "videoappdal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "videoappentity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

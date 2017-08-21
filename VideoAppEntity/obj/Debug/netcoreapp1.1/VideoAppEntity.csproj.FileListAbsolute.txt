@@ -1,0 +1,6 @@
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\bin\Debug\netcoreapp1.1\VideoAppEntity.deps.json
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\bin\Debug\netcoreapp1.1\VideoAppEntity.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\bin\Debug\netcoreapp1.1\VideoAppEntity.pdb
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.AssemblyInfo.cs
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.pdb
