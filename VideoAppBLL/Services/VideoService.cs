@@ -9,34 +9,32 @@ namespace VideoAppBLL.Services
 {
     public class VideoService : IVideoService
     {
+        IVideoRepository repo;
+
+        public VideoService(IVideoRepository repo)
+        {
+            this.repo = repo;
+        }
         public Video Create(Video vid)
         {
-            Video newVideo;
-            FakeDB.Vidoes.Add(newVideo = new Video()
-            {
-                Id = FakeDB.Id++,
-                Name = vid.Name,
-                Genre = vid.Genre,
-                Year = vid.Year
-            });
-            return newVideo;
+
+            return repo.Create(vid);
+                
         }
 
         public Video Delete(int Id)
         {
-            var vid = Get(Id);
-            FakeDB.Vidoes.Remove(vid);
-            return vid;
+            return repo.Delete(Id);
         }
 
         public Video Get(int Id)
         {
-            return FakeDB.Vidoes.FirstOrDefault(x => x.Id == Id);
+            return repo.Get(Id);
         }
 
         public List<Video> GetAll()
         {
-            return new List<Video>(FakeDB.Vidoes);
+            return repo.GetAll();
         }
 
         public Video Update(Video vid)

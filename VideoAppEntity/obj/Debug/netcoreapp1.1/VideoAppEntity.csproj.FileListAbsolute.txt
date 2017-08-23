@@ -4,3 +4,11 @@ C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\bin\Debug\netcoreapp1.1\
 C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.AssemblyInfo.cs
 C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.dll
 C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.pdb
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\bin\Debug\netcoreapp1.1\VideoAppEntity.deps.json
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\bin\Debug\netcoreapp1.1\VideoAppEntity.dll
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\bin\Debug\netcoreapp1.1\VideoAppEntity.pdb
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.csprojResolveAssemblyReference.cache
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.csproj.CoreCompileInputs.cache
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.AssemblyInfo.cs
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.dll
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.pdb

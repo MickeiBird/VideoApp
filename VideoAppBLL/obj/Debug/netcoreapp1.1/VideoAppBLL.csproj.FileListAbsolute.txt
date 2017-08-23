@@ -1,3 +1,15 @@
 C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppBLL\bin\Debug\netcoreapp1.1\VideoAppBLL.deps.json
 C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppBLL\obj\Debug\netcoreapp1.1\VideoAppBLL.csprojResolveAssemblyReference.cache
 C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppBLL\obj\Debug\netcoreapp1.1\VideoAppBLL.AssemblyInfo.cs
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\bin\Debug\netcoreapp1.1\VideoAppBLL.deps.json
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\bin\Debug\netcoreapp1.1\VideoAppBLL.dll
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\bin\Debug\netcoreapp1.1\VideoAppBLL.pdb
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\bin\Debug\netcoreapp1.1\VideoAppDAL.dll
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\bin\Debug\netcoreapp1.1\VideoAppEntity.dll
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\bin\Debug\netcoreapp1.1\VideoAppDAL.pdb
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\bin\Debug\netcoreapp1.1\VideoAppEntity.pdb
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\obj\Debug\netcoreapp1.1\VideoAppBLL.csprojResolveAssemblyReference.cache
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\obj\Debug\netcoreapp1.1\VideoAppBLL.csproj.CoreCompileInputs.cache
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\obj\Debug\netcoreapp1.1\VideoAppBLL.AssemblyInfo.cs
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\obj\Debug\netcoreapp1.1\VideoAppBLL.dll
+C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppBLL\obj\Debug\netcoreapp1.1\VideoAppBLL.pdb

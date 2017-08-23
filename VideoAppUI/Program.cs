@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using VideoAppBLL;
+using VideoAppEntity;
 
 namespace VideoAppUI
 {
@@ -26,22 +28,19 @@ namespace VideoAppUI
                 {
                     case 1:
                         Console.WriteLine("\nShowing list of all videos...\n");
-                        ListVideos(videoList);
+                        ListVideos();
                         break;
                     case 2:
                         Console.WriteLine("\nAdd videos...\n");
-
-
-                        AddVideo(videoList);
+                        AddVideo();
                         break;
                     case 3:
                         Console.WriteLine("Delete video...");
-                        DeleteVideo(videoList);
+                        DeleteVideo();
                         break;
                     case 4:
                         Console.WriteLine("Edit video...");
-                        EditVideo(videoList);
-
+                        EditVideo();
                         break;
                     case 5:
                         Console.WriteLine("Exiting...");
@@ -59,27 +58,31 @@ namespace VideoAppUI
             Console.ReadLine();
         }
 
-        private static void EditVideo(List<Video> videoList)
+        private static void EditVideo()
         {
-            int selected;
-            string tempName;
-            foreach (var video in videoList)
+            List<Video> videoes = bllFacade.VideoService.GetAll();
+
+          
+            Console.WriteLine("What video do you want to edit: ");
+            for (int i = 0; i < videoes.Count; i++)
+                {
+                    Console.WriteLine((i + 1) + " : " + videoes[i].Name);
+                }
+
+            var video = FindVideoById();
+            if (video != null)
             {
-                Console.WriteLine(video.Id + " : " + video.Name);
-
+                Console.Write("\nName : ");
+                video.Name = Console.ReadLine();
+                Console.Write("\nGenre : ");
+                video.Genre = Console.ReadLine();
+                Console.Write("\nYear : ");
+                video.Year = Convert.ToInt32(Console.ReadLine());
             }
-
-            Console.Write("\nChoose the video to edit : ");
-
-            while (!int.TryParse(Console.ReadLine(), out selected) || selected < videoList[0].Id || selected > videoList.Count)
+            else
             {
-                Console.WriteLine("You need to select a number from {0}-{1}", videoList[0].Id, videoList.Count);
+                Console.WriteLine("Video not found");
             }
-
-            Console.WriteLine("Please Write the new name of the video");
-            tempName = videoList[selected - 1].Name;
-            videoList[selected - 1].Name = videoList[selected - 1].Name.Replace(videoList[selected - 1].Name, Console.ReadLine());
-            Console.WriteLine("\nThe video named : '{0}', was changed to : '{1}'", tempName, videoList[selected - 1].Name);
         }
 
         private static int Menu(string[] menuItems)
@@ -103,44 +106,39 @@ namespace VideoAppUI
             return selection;
         }
 
-        private static List<Video> AddVideo(List<Video> videoList)
+        private static void AddVideo()
         {
-            string name;
-            string genre;
-            int year;
-            Video video = new Video();
-            Console.Write("Please type the name of the video : ");
-            name = Console.ReadLine();
-            video.Name = name;
-            Console.Write("\nWhat genre does this video belong in? : ");
-            genre = Console.ReadLine();
-            video.Genre = genre;
-            Console.Write("\nWhat year is it from? : ");
-            year = Convert.ToInt32(Console.ReadLine());
-            video.Year = year;
+            Console.WriteLine("Name: ");
+            var name = Console.ReadLine();
 
-            videoList.Add(video);
-            for (int i = 0; i < videoList.Count; i++)
+            Console.WriteLine("Genre: ");
+            var genre = Console.ReadLine();
+
+            Console.WriteLine("Year : ");
+            var year = Convert.ToInt32(Console.ReadLine());
+
+            bllFacade.VideoService.Create(new Video()
             {
-                if (!video.Id.Equals(i + 1))
-                {
-
-                    videoList[i].Id = i + 1;
-
-                }
-            }
-            Console.WriteLine("\n{0} was added to videos\n ", name);
-            return videoList;
+           
+                Name = name,
+                Genre = genre,
+                Year = year
+                
+            });
         }
 
-        private static void ListVideos(List<Video> videoes)
+        private static void ListVideos()
         {
+            int anotherCounter = 1;
             int counter = 1;
             int selection;
-            foreach (var video in videoes)
+
+            Console.WriteLine("\nList of videoes");
+            foreach (var video in bllFacade.VideoService.GetAll())
             {
-                Console.WriteLine(video.Id + " : " + video.Name + "\n" + "Genre - " + video.Genre + " : " + "Year - " + video.Year +
-                    "\n-------------------------------------");
+                Console.WriteLine(anotherCounter + " : " + video.Name + "\n" + "Genre - " + video.Genre + " : " + "Year - " + video.Year +
+                     "\n-------------------------------------");
+                anotherCounter++;
             }
 
             Console.WriteLine("Do you want to search for videoes?");
@@ -157,9 +155,9 @@ namespace VideoAppUI
                 var namePlaceHolder = Console.ReadLine();
 
 
-                foreach (var video in videoes)
+                foreach (var video in bllFacade.VideoService.GetAll())
                 {
-                    var matchingName = videoes.Where(x => x.Name.Contains(namePlaceHolder));
+                    var matchingName = bllFacade.VideoService.GetAll().Where(x => x.Name.Contains(namePlaceHolder));
 
                     if (video.Name.Contains(namePlaceHolder) || video.Genre.Contains(namePlaceHolder))
                     {
@@ -171,21 +169,41 @@ namespace VideoAppUI
             }
         }
 
-        private static void DeleteVideo(List<Video> videoes)
+        private static Video FindVideoById()
         {
-            int selected;
+
+
+            Console.WriteLine("Insert video Id: ");
+            int id;
+            while (!int.TryParse(Console.ReadLine(), out id)) 
+            {
+                Console.WriteLine("Please type a number");
+            }
+            return bllFacade.VideoService.Get(id);
+
+
+        }
+
+        private static void DeleteVideo()
+        {
+            List<Video> videoes = bllFacade.VideoService.GetAll();
+
+           
+
             Console.WriteLine("What video do you whant to delete?");
             for (int i = 0; i < videoes.Count; i++)
             {
                 Console.WriteLine((i + 1) + " : " + videoes[i].Name);
             }
-            Console.Write("\nType the number of the video you want to delete : ");
-            while (!int.TryParse(Console.ReadLine(), out selected) || selected < videoes[0].Id || selected > videoes.Count)
+            var videoFound = FindVideoById();
+            if (videoFound != null)
             {
-                Console.WriteLine("You need to select a number from {0}-{1}", videoes[0].Id, videoes.Count);
+                bllFacade.VideoService.Delete(videoFound.Id);
             }
 
-            videoes.RemoveAt(selected - 1);
+            var response = videoFound == null ?
+                "Video not Found" : "Video was Deleted";
+           
         }
     }
 }
