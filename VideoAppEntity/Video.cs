@@ -19,7 +19,7 @@ namespace VideoAppEntity
             this.Year = Year;
         }
 
-        public  Video()
+        public Video()
         {
 
         }

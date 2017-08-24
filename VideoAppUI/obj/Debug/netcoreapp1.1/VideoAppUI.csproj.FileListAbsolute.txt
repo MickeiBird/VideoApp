@@ -19,3 +19,13 @@ C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\Vide
 C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppDAL.pdb
 C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppUI\obj\Debug\netcoreapp1.1\VideoAppUI.dll
 C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppUI\obj\Debug\netcoreapp1.1\VideoAppUI.pdb
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppUI.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppUI.pdb
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppBLL.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppDAL.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppEntity.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppBLL.pdb
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppEntity.pdb
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\bin\Debug\netcoreapp1.1\VideoAppDAL.pdb
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\obj\Debug\netcoreapp1.1\VideoAppUI.dll
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppUI\obj\Debug\netcoreapp1.1\VideoAppUI.pdb

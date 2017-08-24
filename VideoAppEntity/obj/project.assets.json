@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -7037,31 +7037,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\madmo\\.nuget\\packages\\": {}
+    "C:\\Users\\Domea\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj",
+      "projectUniqueName": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj",
       "projectName": "VideoAppEntity",
-      "projectPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj",
-      "packagesPath": "C:\\Users\\madmo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\obj\\",
+      "projectPath": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj",
+      "outputPath": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\obj\\",
       "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\madmo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {}

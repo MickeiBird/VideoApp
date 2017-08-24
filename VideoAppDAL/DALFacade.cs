@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using VideoAppDAL.Repositories;
+using VideoAppDAL.UOW;
 
 namespace VideoAppDAL
 {
@@ -9,7 +10,21 @@ namespace VideoAppDAL
     {
         public IVideoRepository VideoRepository
         {
-            get { return new VideoRepositoryFakeDB(); }
+            //get { return new VideoRepositoryFakeDB(); }
+            get
+            {
+                return new VideoRepositoryEFMemory(
+                    new Context.InMemoryContext());
+            }
+        }
+
+        public IUnitOfWork UnitOfWork
+        {
+            //get { return new VideoRepositoryFakeDB(); }
+            get
+            {
+                return new UnitOfWorkMem();
+            }
         }
     }
 }

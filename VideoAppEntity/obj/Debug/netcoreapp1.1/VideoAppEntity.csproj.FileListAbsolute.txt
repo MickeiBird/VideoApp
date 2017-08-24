@@ -12,3 +12,4 @@ C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\
 C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.AssemblyInfo.cs
 C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.dll
 C:\Users\madmo\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.pdb
+C:\Users\Domea\Documents\GitHub\VideoApp\VideoAppEntity\obj\Debug\netcoreapp1.1\VideoAppEntity.csprojResolveAssemblyReference.cache

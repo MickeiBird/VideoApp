@@ -78,11 +78,13 @@ namespace VideoAppUI
                 video.Genre = Console.ReadLine();
                 Console.Write("\nYear : ");
                 video.Year = Convert.ToInt32(Console.ReadLine());
+                bllFacade.VideoService.Update(video);
             }
             else
             {
                 Console.WriteLine("Video not found");
             }
+            
         }
 
         private static int Menu(string[] menuItems)
