@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v1.1": {
       "videoappui/1.0.0": {
         "dependencies": {
-          "VideoAppBLL": "1.0.0",
-          "VideoAppEntity": "1.0.0"
+          "VideoAppBLL": "1.0.0"
         },
         "runtime": {
           "VideoAppUI.dll": {}
@@ -114,8 +113,7 @@
       },
       "videoappbll/1.0.0": {
         "dependencies": {
-          "VideoAppDAL": "1.0.0",
-          "VideoAppEntity": "1.0.0"
+          "VideoAppDAL": "1.0.0"
         },
         "runtime": {
           "VideoAppBLL.dll": {}
@@ -123,16 +121,10 @@
       },
       "videoappdal/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.InMemory": "1.1.2",
-          "VideoAppEntity": "1.0.0"
+          "Microsoft.EntityFrameworkCore.InMemory": "1.1.2"
         },
         "runtime": {
           "VideoAppDAL.dll": {}
-        }
-      },
-      "videoappentity/1.0.0": {
-        "runtime": {
-          "VideoAppEntity.dll": {}
         }
       }
     }
@@ -240,11 +232,6 @@
       "sha512": ""
     },
     "videoappdal/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "videoappentity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

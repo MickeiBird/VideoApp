@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using VideoAppEntity;
+using VideoAppBLL.BusinessObject;
 
 namespace VideoAppBLL
 {
     public interface IVideoService
     {
         //C
-        Video Create(Video vid);
+        VideoBO Create(VideoBO vid);
         //R
-        List<Video> GetAll();
-        Video Get(int Id);
+        List<VideoBO> GetAll();
+        VideoBO Get(int Id);
         //U
-        Video Update(Video vid);
+        VideoBO Update(VideoBO vid);
         //D
-        Video Delete(int Id);   
+        VideoBO Delete(int Id);   
     }
 }

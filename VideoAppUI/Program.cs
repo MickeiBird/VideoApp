@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using VideoAppBLL;
-using VideoAppEntity;
+using VideoAppBLL.BusinessObject;
 
 namespace VideoAppUI
 {
@@ -60,7 +60,7 @@ namespace VideoAppUI
 
         private static void EditVideo()
         {
-            List<Video> videoes = bllFacade.VideoService.GetAll();
+            List<VideoBO> videoes = bllFacade.VideoService.GetAll();
 
           
             Console.WriteLine("What video do you want to edit: ");
@@ -119,7 +119,7 @@ namespace VideoAppUI
             Console.WriteLine("Year : ");
             var year = Convert.ToInt32(Console.ReadLine());
 
-            bllFacade.VideoService.Create(new Video()
+            bllFacade.VideoService.Create(new VideoBO()
             {
            
                 Name = name,
@@ -171,7 +171,7 @@ namespace VideoAppUI
             }
         }
 
-        private static Video FindVideoById()
+        private static VideoBO FindVideoById()
         {
 
 
@@ -188,7 +188,7 @@ namespace VideoAppUI
 
         private static void DeleteVideo()
         {
-            List<Video> videoes = bllFacade.VideoService.GetAll();
+            List<VideoBO> videoes = bllFacade.VideoService.GetAll();
 
            
 

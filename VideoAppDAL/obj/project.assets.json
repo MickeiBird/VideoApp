@@ -2460,19 +2460,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "VideoAppEntity/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v1.1",
-        "dependencies": {
-          "Microsoft.NETCore.App": "1.1.2"
-        },
-        "compile": {
-          "bin/placeholder/VideoAppEntity.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/VideoAppEntity.dll": {}
-        }
       }
     }
   },
@@ -7397,18 +7384,12 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-    },
-    "VideoAppEntity/1.0.0": {
-      "type": "project",
-      "path": "../VideoAppEntity/VideoAppEntity.csproj",
-      "msbuildProject": "../VideoAppEntity/VideoAppEntity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
       "Microsoft.EntityFrameworkCore.InMemory >= 1.1.2",
-      "Microsoft.NETCore.App >= 1.1.2",
-      "VideoAppEntity >= 1.0.0"
+      "Microsoft.NETCore.App >= 1.1.2"
     ]
   },
   "packageFolders": {
@@ -7439,11 +7420,7 @@
       },
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {
-            "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj": {
-              "projectPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       }
     },

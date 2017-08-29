@@ -2466,27 +2466,13 @@
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.InMemory": "1.1.2",
-          "Microsoft.NETCore.App": "1.1.2",
-          "VideoAppEntity": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/VideoAppDAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/VideoAppDAL.dll": {}
-        }
-      },
-      "VideoAppEntity/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v1.1",
-        "dependencies": {
           "Microsoft.NETCore.App": "1.1.2"
         },
         "compile": {
-          "bin/placeholder/VideoAppEntity.dll": {}
+          "bin/placeholder/VideoAppDAL.dll": {}
         },
         "runtime": {
-          "bin/placeholder/VideoAppEntity.dll": {}
+          "bin/placeholder/VideoAppDAL.dll": {}
         }
       }
     }
@@ -7417,18 +7403,12 @@
       "type": "project",
       "path": "../VideoAppDAL/VideoAppDAL.csproj",
       "msbuildProject": "../VideoAppDAL/VideoAppDAL.csproj"
-    },
-    "VideoAppEntity/1.0.0": {
-      "type": "project",
-      "path": "../VideoAppEntity/VideoAppEntity.csproj",
-      "msbuildProject": "../VideoAppEntity/VideoAppEntity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
       "Microsoft.NETCore.App >= 1.1.2",
-      "VideoAppDAL >= 1.0.0",
-      "VideoAppEntity >= 1.0.0"
+      "VideoAppDAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7460,9 +7440,6 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj": {
-              "projectPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj"
-            },
             "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppDAL\\VideoAppDAL.csproj": {
               "projectPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppDAL\\VideoAppDAL.csproj"
             }
