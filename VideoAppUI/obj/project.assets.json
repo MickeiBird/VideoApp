@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -2468,6 +2468,12 @@
           "Microsoft.NETCore.App": "1.1.2",
           "VideoAppDAL": "1.0.0",
           "VideoAppEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VideoAppBLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VideoAppBLL.dll": {}
         }
       },
       "VideoAppDAL/1.0.0": {
@@ -2477,6 +2483,12 @@
           "Microsoft.EntityFrameworkCore.InMemory": "1.1.2",
           "Microsoft.NETCore.App": "1.1.2",
           "VideoAppEntity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/VideoAppDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VideoAppDAL.dll": {}
         }
       },
       "VideoAppEntity/1.0.0": {
@@ -2484,6 +2496,12 @@
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
           "Microsoft.NETCore.App": "1.1.2"
+        },
+        "compile": {
+          "bin/placeholder/VideoAppEntity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VideoAppEntity.dll": {}
         }
       }
     }
@@ -7434,27 +7452,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Domea\\.nuget\\packages\\": {}
+    "C:\\Users\\madmo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppUI\\VideoAppUI.csproj",
+      "projectUniqueName": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppUI\\VideoAppUI.csproj",
       "projectName": "VideoAppUI",
-      "projectPath": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppUI\\VideoAppUI.csproj",
-      "outputPath": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppUI\\obj\\",
+      "projectPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppUI\\VideoAppUI.csproj",
+      "packagesPath": "C:\\Users\\madmo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppUI\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\madmo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\VideoAppBLL.csproj": {
-              "projectPath": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\VideoAppBLL.csproj"
+            "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\VideoAppBLL.csproj": {
+              "projectPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\VideoAppBLL.csproj"
             },
-            "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj": {
-              "projectPath": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj"
+            "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj": {
+              "projectPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppEntity\\VideoAppEntity.csproj"
             }
           }
         }
