@@ -49,7 +49,6 @@ namespace VideoAppBLL.Services
         {
             using (var uow = facade.UnitOfWork)
             {
-                // return uow.VideoRepository.GetAll();
                 return uow.VideoRepository.GetAll().Select(Convert).ToList();
             }
         }
@@ -64,7 +63,6 @@ namespace VideoAppBLL.Services
                     throw new InvalidOperationException("Video not found");
                 }
                 videoFromDb.Name = vid.Name;
-                videoFromDb.Genre = vid.Genre;
                 videoFromDb.Year = vid.Year;
                 uow.Complete();
                 return Convert(videoFromDb);
@@ -77,7 +75,6 @@ namespace VideoAppBLL.Services
             {
                 Id = vid.Id,
                 Name = vid.Name,
-                Genre = vid.Genre,
                 Year = vid.Year
             };
         }

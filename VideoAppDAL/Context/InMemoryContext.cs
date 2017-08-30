@@ -20,5 +20,6 @@ namespace VideoAppDAL.Context
         }
 
         public DbSet<Video> Videoes { get; set; }
+        public DbSet<Genre> Genres { get; set; }
     }
 }

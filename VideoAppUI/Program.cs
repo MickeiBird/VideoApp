@@ -75,7 +75,7 @@ namespace VideoAppUI
                 Console.Write("\nName : ");
                 video.Name = Console.ReadLine();
                 Console.Write("\nGenre : ");
-                video.Genre = Console.ReadLine();
+                video.Genre.Name = Console.ReadLine();
                 Console.Write("\nYear : ");
                 video.Year = Convert.ToInt32(Console.ReadLine());
                 bllFacade.VideoService.Update(video);
@@ -161,7 +161,7 @@ namespace VideoAppUI
                 {
                     var matchingName = bllFacade.VideoService.GetAll().Where(x => x.Name.Contains(namePlaceHolder));
 
-                    if (video.Name.Contains(namePlaceHolder) || video.Genre.Contains(namePlaceHolder))
+                    if (video.Name.Contains(namePlaceHolder) || video.Genre.Name.Contains(namePlaceHolder))
                     {
                         Console.WriteLine(counter + " : " + video.Name);
                         counter++;

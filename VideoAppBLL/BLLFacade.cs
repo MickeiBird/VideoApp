@@ -8,10 +8,6 @@ namespace VideoAppBLL
 {
    public class BLLFacade
     {
-        //public IVideoService GetVideoService()
-        //{
-        //    return new VideoService();
-        //}
         public IVideoService VideoService
         {
             get { return new VideoService(new DALFacade()); }

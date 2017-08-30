@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Libuv/1.9.1": {
@@ -2467,12 +2467,6 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.InMemory": "1.1.2",
           "Microsoft.NETCore.App": "1.1.2"
-        },
-        "compile": {
-          "bin/placeholder/VideoAppDAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/VideoAppDAL.dll": {}
         }
       }
     }
@@ -7412,36 +7406,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\madmo\\.nuget\\packages\\": {}
+    "C:\\Users\\Domea\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\VideoAppBLL.csproj",
+      "projectUniqueName": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\VideoAppBLL.csproj",
       "projectName": "VideoAppBLL",
-      "projectPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\VideoAppBLL.csproj",
-      "packagesPath": "C:\\Users\\madmo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\obj\\",
+      "projectPath": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\VideoAppBLL.csproj",
+      "outputPath": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppBLL\\obj\\",
       "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\madmo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppDAL\\VideoAppDAL.csproj": {
-              "projectPath": "C:\\Users\\madmo\\Documents\\GitHub\\VideoApp\\VideoAppDAL\\VideoAppDAL.csproj"
+            "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppDAL\\VideoAppDAL.csproj": {
+              "projectPath": "C:\\Users\\Domea\\Documents\\GitHub\\VideoApp\\VideoAppDAL\\VideoAppDAL.csproj"
             }
           }
         }

@@ -10,7 +10,6 @@ namespace VideoAppDAL
     {
         public IVideoRepository VideoRepository
         {
-            //get { return new VideoRepositoryFakeDB(); }
             get
             {
                 return new VideoRepositoryEFMemory(
@@ -18,9 +17,17 @@ namespace VideoAppDAL
             }
         }
 
-        public IUnitOfWork UnitOfWork
+        public IGenreRepository GenreRepository
         {
-            //get { return new VideoRepositoryFakeDB(); }
+            get
+            {
+                return new GenreRepositoryEFMemory(
+                    new Context.InMemoryContext());
+            }
+        }
+
+        public IUnitOfWork UnitOfWork
+        {   
             get
             {
                 return new UnitOfWorkMem();
