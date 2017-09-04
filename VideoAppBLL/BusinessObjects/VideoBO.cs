@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using VideoAppBLL.BusinessObjects;
 using VideoAppDAL.Entities;
 
 namespace VideoAppBLL.BusinessObject

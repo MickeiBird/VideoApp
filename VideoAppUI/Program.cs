@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using VideoAppBLL;
 using VideoAppBLL.BusinessObject;
+using VideoAppBLL.BusinessObjects;
 
 namespace VideoAppUI
 {
@@ -114,7 +115,7 @@ namespace VideoAppUI
             var name = Console.ReadLine();
 
             Console.WriteLine("Genre: ");
-            var genre = Console.ReadLine();
+            var genre = AddGenre();
 
             Console.WriteLine("Year : ");
             var year = Convert.ToInt32(Console.ReadLine());
@@ -127,6 +128,17 @@ namespace VideoAppUI
                 Year = year
                 
             });
+        }
+
+        private static GenreBO AddGenre()
+        {
+            
+            var name = Console.ReadLine();
+            return bllFacade.GenreService.Create(new GenreBO()
+            {
+                Name = name
+            });
+            
         }
 
         private static void ListVideos()
